@@ -1,0 +1,76 @@
+@import "compass/css3";
+
+///////////////////
+// Variables
+///////////////////
+
+
+///////////////////
+// Mixins
+///////////////////
+@mixin center-text() {
+  text-align: center;
+}
+
+*,
+*::before,
+*::after {
+  @include box-sizing(border-box);
+}
+
+body {
+  color: hsl(0, 0%, 75%);
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+header {
+  // Positioning
+  line-height: 1;
+  text-align: center;
+  
+  h1 {
+    margin-bottom: 2rem;
+  }
+  
+  .shine-logo {
+    // Theme
+    color: hsl(0, 0%, 97%);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 12rem;
+    text-rendering: optimizelegibility;
+  }
+  
+  .shine-icon {
+    font-size: 3rem;
+    margin: 1rem;
+  }
+}
+
+section article {
+  @include center-text;
+}
+
+a i.genericon {
+  color: hsl(0, 0%, 75%);
+  transition: all 0.75s ease-in 0s;
+  text-decoration: none;
+  
+  &.genericon-facebook-alt:hover {
+    color: hsl(222, 37%, 47%);
+  }
+  
+  &.genericon-twitter:hover {
+    color: hsl(222, 75%, 75%);
+  }
+  
+  &.genericon-linkedin:hover {
+    color: hsl(206, 65%, 45%);
+  }
+  
+  &.genericon-pinterest:hover {
+    color: hsl(357, 65%, 48%);
+  }
+}

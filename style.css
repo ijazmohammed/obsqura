@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  color: #bfbfbf;
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+header {
+  line-height: 1;
+  text-align: center;
+}
+header h1 {
+  margin-bottom: 2rem;
+}
+header .shine-logo {
+  color: #f7f7f7;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-rendering: optimizelegibility;
+}
+header .shine-icon {
+  font-size: 3rem;
+  margin: 1rem;
+}
+
+section article {
+  text-align: center;
+}
+
+a i.genericon {
+  color: #bfbfbf;
+  transition: all 0.75s ease-in 0s;
+  text-decoration: none;
+}
+a i.genericon.genericon-facebook-alt:hover {
+  color: #4c66a4;
+}
+a i.genericon.genericon-twitter:hover {
+  color: #8facef;
+}
+a i.genericon.genericon-linkedin:hover {
+  color: #287dbd;
+}
+a i.genericon.genericon-pinterest:hover {
+  color: #ca2b33;
+}
